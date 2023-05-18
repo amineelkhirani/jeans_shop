@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Contact Us</title>
+	<link rel="stylesheet" href="contact.css">
+</head>
+<body>
+	<header>
+		<nav>
+			<ul>
+				<li><a href="home.html">Home</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="product.html">Products</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<h1>Contact Us</h1>
+		<form id="contactForm" onsubmit="submitForm(event)">
+			<label for="nameInput">Name:</label>
+			<input type="text" id="nameInput" name="nameInput" required>
+
+			<label for="emailInput">Email:</label>
+			<input type="email" id="emailInput" name="emailInput" required>
+
+			<label for="messageInput">Message:</label>
+			<textarea id="messageInput" name="messageInput" rows="5" required></textarea>
+
+			<button type="submit">Submit</button>
+		</form>
+		<p id="successMessage" class="hidden">Form submitted successfully!</p>
+	</main>
+	<footer>
+		<p>&copy; 2023 My Company</p>
+	</footer>
+	<script src="js.js"></script>
+</body>
+</html>
